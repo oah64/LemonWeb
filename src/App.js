@@ -1,10 +1,23 @@
 import "./App.css";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Specials from "./components/Specials";
+import Testimonials from "./components/Testimonials";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      Placeholder for the app. This is where the main content will go.
-    </div>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <Specials />
+        <Testimonials />
+        <About />
+      </main>
+      <Footer />
+    </>
   );
 }
 
