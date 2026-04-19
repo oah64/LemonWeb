@@ -28,7 +28,7 @@ function Footer() {
       <nav>
         <h3>Contact</h3>
         <ul>
-          <li>Adress: 123 Main Street, Anytown, USA</li>
+          <li>Adress: 123 Main Street, Chicago, USA</li>
           <li>Phhone number: (123) 456-7890</li>
           <li>Email: info@littlelemon.com</li>
           <li>

@@ -2,32 +2,43 @@ import SpecialCard from "./SpecialCard";
 
 const specials = [
   {
-    img: "https://via.placeholder.com/150",
-    alt: "Dish 1",
-    title: "Dish 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "../assets/greek-salad.jpg",
+    alt: "Greek Salad",
+    title: "Greek Salad",
+    price: "12,00$",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    img: "https://via.placeholder.com/150",
-    alt: "Dish 2",
-    title: "Dish 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "../assets/bruchetta.svg",
+    alt: "Bruchetta",
+    title: "Bruchetta",
+    price: "8,00 $",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
-    img: "https://via.placeholder.com/150",
-    alt: "Dish 3",
-    title: "Dish 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: "../assets/lemon-dessert.jpg",
+    alt: "Lemon Dessert",
+    title: "Lemon Dessert",
+    price: "6,00$",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
 ];
 
 function Specials() {
   return (
     <section className="highlights">
-      <h2>Specials</h2>
-      {specials.map((special) => (
-        <SpecialCard key={special.title} {...special} />
-      ))}
+      <div className="highlights-header">
+        <h2>This weeks Specials</h2>
+        <button className="btn-primary">Online Menu</button>
+      </div>
+      <div className="highlights-cards">
+        {specials.map((special) => (
+          <SpecialCard key={special.title} {...special} />
+        ))}
+      </div>
     </section>
   );
 }

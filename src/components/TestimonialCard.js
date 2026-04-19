@@ -1,9 +1,12 @@
-function TestimonialCard({ img, alt, name, rating }) {
+function TestimonialCard({ img, alt, name, rating, review }) {
   return (
     <article className="card-small">
-      <img src={img} alt={alt} />
-      <h3>{name}</h3>
-      <p>{rating}</p>
+      <p className="card-rating">{rating}</p>
+      <div className="card-small-identity">
+        <img src={img} alt={alt} />
+        <h3>{name}</h3>
+      </div>
+      <p>{review}</p>
     </article>
   );
 }
