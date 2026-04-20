@@ -2,28 +2,28 @@ import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
-    img: "https://via.placeholder.com/80",
+    img: "../assets/Fratze1.png",
     alt: "name1",
     name: "Name 1",
     rating: "★★★★★",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    img: "https://via.placeholder.com/80",
+    img: "../assets/Fratze2.png",
     alt: "name2",
     name: "Name 2",
     rating: "★★★★☆",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    img: "https://via.placeholder.com/80",
+    img: "../assets/Fratze3.png",
     alt: "name3",
     name: "Name 3",
     rating: "★★★★★",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    img: "https://via.placeholder.com/80",
+    img: "../assets/Fratze4.png",
     alt: "name4",
     name: "Name 4",
     rating: "★★★☆☆",
