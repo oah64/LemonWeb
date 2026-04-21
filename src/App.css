@@ -276,7 +276,7 @@ footer {
   gap: 5rem;
   padding-block: 6rem;
   padding-inline: max(4rem, calc((100% - 1200px) / 2));
-  background-color: #edefee;
+  background-color: #fbdabb;
 }
 
 footer img {

@@ -1,32 +1,35 @@
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 function Nav() {
   return (
     <header className="App-header">
-      <a href="/">
+      <Link to="/">
         <img
           src="../assets/Logo.svg"
           alt="Little Lemon Logo"
           className="logo"
         />
-      </a>
+      </Link>
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <HashLink to="/#about">About</HashLink>
           </li>
           <li>
-            <a href="/menu">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="/reservations">Reservations</a>
+            <Link to="/reservations">Reservations</Link>
           </li>
           <li>
-            <a href="/order">Order Online</a>
+            <Link to="/order">Order Online</Link>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>
