@@ -40,6 +40,8 @@ body {
   width: 12rem;
   background-color: #f4ce14;
   color: #333;
+  text-align: center;
+  text-decoration: none;
   border: none;
   margin-top: 3rem;
   padding: 0.6rem 1.4rem;
@@ -213,10 +215,6 @@ body {
   font-size: 0.95rem;
 }
 
-.card-small p {
-  font-size: 0.9rem;
-}
-
 /* ── About ───────────────────────────────────────── */
 .about {
   display: grid;
@@ -276,7 +274,7 @@ footer {
   gap: 5rem;
   padding-block: 6rem;
   padding-inline: max(4rem, calc((100% - 1200px) / 2));
-  background-color: #fbdabb;
+  background-color: #edefee;
 }
 
 footer img {
@@ -309,6 +307,130 @@ footer nav ul li {
   font-size: 0.9rem;
 }
 
+/* ── Booking ─────────────────────────────────────── */
+.booking-page {
+  padding-inline: max(4rem, calc((100% - 1200px) / 2));
+  padding-block: 4rem;
+}
+
+.booking-hero {
+  background-color: #495e57;
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.booking-hero h1 {
+  color: #f4ce14;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.booking-hero p {
+  font-size: 1.1rem;
+}
+
+.booking-form {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 480px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.form-field input,
+.form-field select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: 2px solid #495e57;
+  border-color: #495e57;
+}
+
+.booking-submit {
+  margin-top: 0.5rem;
+  width: auto;
+  align-self: start;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.booking-slots-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.booking-slots-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.booking-slot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.slot-available {
+  background-color: #d4edda;
+}
+
+.slot-booked {
+  background-color: #f8d7da;
+  opacity: 0.6;
+}
+
+.slot-status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.confirmed-booking {
+  align-items: center;
+  background-color: #495e57;
+  color: #f4ce14;
+  text-align: center;
+  padding: 4rem 1.4rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: default;
+  font-size: 0.9rem;
+}
+
+.confirmed-booking ul,
+.confirmed-booking p {
+  padding: 1rem;
+  color: #fff;
+  gap: 1rem;
+}
 /* ── Responsive ──────────────────────────────────── */
 
 /* Tablet: ≤1024px */

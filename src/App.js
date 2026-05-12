@@ -4,9 +4,10 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import Reservations from "./pages/Reservations";
+import BookingPage from "./pages/BookingPage";
 import OrderOnline from "./pages/OrderOnline";
 import Login from "./pages/Login";
+import ConfirmedBooking from "./pages/ConfirmedBooking";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/reservations" element={<BookingPage />} />
+          <Route path="/booking-confirmed" element={<ConfirmedBooking />} />
           <Route path="/order" element={<OrderOnline />} />
           <Route path="/login" element={<Login />} />
         </Routes>
