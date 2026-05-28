@@ -162,6 +162,7 @@ body {
 .card-price {
   color: #ee9972;
   font-weight: 700;
+  padding-right: 1rem;
 }
 
 .card-large p {

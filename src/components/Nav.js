@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import { NavHashLink } from "react-router-hash-link";
 
 function Nav() {
   return (
@@ -17,7 +16,7 @@ function Nav() {
             <NavLink to="/" end>Home</NavLink>
           </li>
           <li>
-            <NavHashLink to="/#about">About</NavHashLink>
+            <a href="/#about">About</a>
           </li>
           <li>
             <NavLink to="/menu">Menu</NavLink>

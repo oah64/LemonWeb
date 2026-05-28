@@ -6,7 +6,7 @@ const specials = [
     img: "../assets/greek-salad.jpg",
     alt: "Greek Salad",
     title: "Greek Salad",
-    price: "12,00$",
+    price: "12,00 $",
     description:
       "Crisp romaine, Kalamata olives, sun-dried tomatoes, cucumber, and crumbled feta tossed in a zesty oregano vinaigrette. Light, refreshing, and made to order.",
   },
@@ -22,7 +22,7 @@ const specials = [
     img: "../assets/lemon-dessert.jpg",
     alt: "Lemon Dessert",
     title: "Lemon Dessert",
-    price: "6,00$",
+    price: "6,00 $",
     description:
       "A silky lemon posset with a buttery shortbread base, topped with candied zest and a dusting of powdered sugar. The perfect bright finish to any Mediterranean meal.",
   },
@@ -33,7 +33,9 @@ function Specials() {
     <section className="highlights">
       <div className="highlights-header">
         <h2>This weeks Specials</h2>
-        <Link to="/menu" className="btn-primary">Online Menu</Link>
+        <Link to="/menu" className="btn-primary">
+          Online Menu
+        </Link>
       </div>
       <div className="highlights-cards">
         {specials.map((special) => (
