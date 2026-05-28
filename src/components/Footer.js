@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaInstagram, FaFacebook, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -43,21 +44,23 @@ function Footer() {
         <h3>Social Media</h3>
         <ul>
           <li>
-            Instagram:{" "}
-            <a href="https://www.instagram.com/littlelemon" aria-label="Little Lemon on Instagram">littlelemon</a>
+            <a href="https://www.instagram.com/littlelemon" aria-label="Little Lemon on Instagram">
+              <FaInstagram aria-hidden="true" /> Instagram
+            </a>
           </li>
           <li>
-            Facebook:{" "}
-            <a href="https://www.facebook.com/littlelemon" aria-label="Little Lemon on Facebook">littlelemon</a>
+            <a href="https://www.facebook.com/littlelemon" aria-label="Little Lemon on Facebook">
+              <FaFacebook aria-hidden="true" /> Facebook
+            </a>
           </li>
           <li>
-            Twitter:{" "}
-            <a href="https://www.twitter.com/littlelemon" aria-label="Little Lemon on Twitter">littlelemon</a>
+            <a href="https://www.twitter.com/littlelemon" aria-label="Little Lemon on Twitter">
+              <FaXTwitter aria-hidden="true" /> Twitter
+            </a>
           </li>
           <li>
-            LinkedIn:{" "}
             <a href="https://www.linkedin.com/company/littlelemon" aria-label="Little Lemon on LinkedIn">
-              littlelemon
+              <FaLinkedin aria-hidden="true" /> LinkedIn
             </a>
           </li>
         </ul>

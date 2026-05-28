@@ -7,10 +7,19 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
   const [time, setTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
-  const [touched, setTouched] = useState({ date: false, time: false, guests: false, occasion: false });
+  const [touched, setTouched] = useState({
+    date: false,
+    time: false,
+    guests: false,
+    occasion: false,
+  });
 
   const errors = {
-    date: !date ? "Please choose a date." : date < today ? "Date cannot be in the past." : "",
+    date: !date
+      ? "Please choose a date."
+      : date < today
+        ? "Date cannot be in the past."
+        : "",
     time: !time ? "Please choose a time." : "",
     guests: guests < 1 || guests > 10 ? "Guests must be between 1 and 10." : "",
     occasion: !occasion ? "Please select an occasion." : "",
@@ -38,7 +47,11 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
   };
 
   return (
-    <form className="booking-form" onSubmit={handleSubmit} aria-label="Table reservation form">
+    <form
+      className="booking-form"
+      onSubmit={handleSubmit}
+      aria-label="Table reservation form"
+    >
       <div className="form-field">
         <label htmlFor="booking-date">Choose date</label>
         <input
@@ -52,7 +65,9 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
           required
         />
         {touched.date && errors.date && (
-          <span className="error-msg" role="alert">{errors.date}</span>
+          <span className="error-msg" role="alert">
+            {errors.date}
+          </span>
         )}
       </div>
 
@@ -61,18 +76,27 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
         <select
           id="booking-time"
           value={time}
-          onChange={(e) => { setTime(e.target.value); touch("time"); }}
+          onChange={(e) => {
+            setTime(e.target.value);
+            touch("time");
+          }}
           onBlur={() => touch("time")}
           className={touched.time && errors.time ? "invalid" : ""}
           required
         >
-          <option value="" disabled>Select a time</option>
+          <option value="" disabled>
+            Select a time
+          </option>
           {availableTimes.map((t) => (
-            <option key={t} value={t}>{t}</option>
+            <option key={t} value={t}>
+              {t}
+            </option>
           ))}
         </select>
         {touched.time && errors.time && (
-          <span className="error-msg" role="alert">{errors.time}</span>
+          <span className="error-msg" role="alert">
+            {errors.time}
+          </span>
         )}
       </div>
 
@@ -85,13 +109,18 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
           max={10}
           step={1}
           value={guests}
-          onChange={(e) => { setGuests(Number(e.target.value)); touch("guests"); }}
+          onChange={(e) => {
+            setGuests(Number(e.target.value));
+            touch("guests");
+          }}
           onBlur={() => touch("guests")}
           className={touched.guests && errors.guests ? "invalid" : ""}
           required
         />
         {touched.guests && errors.guests && (
-          <span className="error-msg" role="alert">{errors.guests}</span>
+          <span className="error-msg" role="alert">
+            {errors.guests}
+          </span>
         )}
       </div>
 
@@ -100,26 +129,37 @@ function BookingForm({ availableTimes, dispatch, onSubmit }) {
         <select
           id="booking-occasion"
           value={occasion}
-          onChange={(e) => { setOccasion(e.target.value); touch("occasion"); }}
+          onChange={(e) => {
+            setOccasion(e.target.value);
+            touch("occasion");
+          }}
           onBlur={() => touch("occasion")}
           className={touched.occasion && errors.occasion ? "invalid" : ""}
           required
         >
-          <option value="" disabled>Select an occasion</option>
+          <option value="" disabled>
+            Select an occasion
+          </option>
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
           <option value="Business dinner">Business dinner</option>
           <option value="Other">Other</option>
         </select>
         {touched.occasion && errors.occasion && (
-          <span className="error-msg" role="alert">{errors.occasion}</span>
+          <span className="error-msg" role="alert">
+            {errors.occasion}
+          </span>
         )}
       </div>
 
       {!Object.values(touched).some(Boolean) && (
         <p className="error-msg">* All fields are required</p>
       )}
-      <button type="submit" className="btn-primary booking-submit" disabled={!isFormValid}>
+      <button
+        type="submit"
+        className="btn-primary booking-submit"
+        disabled={!isFormValid}
+      >
         Make Your Reservation
       </button>
     </form>

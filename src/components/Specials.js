@@ -8,7 +8,7 @@ const specials = [
     title: "Greek Salad",
     price: "12,00$",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Crisp romaine, Kalamata olives, sun-dried tomatoes, cucumber, and crumbled feta tossed in a zesty oregano vinaigrette. Light, refreshing, and made to order.",
   },
   {
     img: "../assets/bruchetta.svg",
@@ -16,7 +16,7 @@ const specials = [
     title: "Bruchetta",
     price: "8,00 $",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Toasted sourdough rubbed with garlic and topped with a vibrant mix of heirloom tomatoes, fresh basil, and a drizzle of extra-virgin olive oil. Simple and irresistible.",
   },
   {
     img: "../assets/lemon-dessert.jpg",
@@ -24,7 +24,7 @@ const specials = [
     title: "Lemon Dessert",
     price: "6,00$",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "A silky lemon posset with a buttery shortbread base, topped with candied zest and a dusting of powdered sugar. The perfect bright finish to any Mediterranean meal.",
   },
 ];
 

@@ -315,6 +315,9 @@ footer nav ul li a {
   text-decoration: none;
   color: #333;
   font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 footer nav ul li {
@@ -347,7 +350,9 @@ footer nav ul li {
 
 .booking-form {
   display: grid;
-  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  gap: 2rem;
   max-width: 480px;
 }
 
@@ -503,6 +508,10 @@ footer nav ul li {
     width: 40%;
     margin-right: 0;
   }
+
+  .booking-layout {
+    gap: 2rem;
+  }
 }
 
 /* Mobile: ≤768px */
@@ -597,5 +606,30 @@ footer nav ul li {
     grid-column: auto;
     width: 50%;
     margin: 0 auto;
+  }
+
+  /* Booking */
+  .booking-page {
+    padding-inline: 2rem;
+  }
+
+  .booking-hero {
+    padding: 1.5rem;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .booking-slots-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .booking-form {
+    margin-left: 0;
+    max-width: 100%;
   }
 }

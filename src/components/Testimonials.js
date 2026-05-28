@@ -4,30 +4,30 @@ const testimonials = [
   {
     img: "../assets/Fratze1.png",
     alt: "Customer photo",
-    name: "Name 1",
+    name: "Sofia M.",
     rating: "★★★★★",
-    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    review: "The lemon dessert alone is worth the trip. Every visit feels like being welcomed into someone's home — warm, unhurried, and delicious.",
   },
   {
     img: "../assets/Fratze2.png",
     alt: "Customer photo",
-    name: "Name 2",
+    name: "James R.",
     rating: "★★★★☆",
-    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    review: "Fantastic Greek salad and the bruchetta is the best I've had outside of Italy. Gets busy on weekends, so book ahead!",
   },
   {
     img: "../assets/Fratze3.png",
     alt: "Customer photo",
-    name: "Name 3",
+    name: "Priya K.",
     rating: "★★★★★",
-    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    review: "We celebrated our anniversary here and the staff made it truly special. The food was outstanding — fresh, flavourful, and beautifully presented.",
   },
   {
     img: "../assets/Fratze4.png",
     alt: "Customer photo",
-    name: "Name 4",
+    name: "Tom L.",
     rating: "★★★☆☆",
-    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    review: "Solid food and a great atmosphere. Service was a bit slow on the night we visited, but the bruchetta and dessert more than made up for it.",
   },
 ];
 
