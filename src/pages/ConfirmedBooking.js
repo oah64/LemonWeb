@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function ConfirmedBooking() {
   const { state } = useLocation();
@@ -16,6 +16,7 @@ function ConfirmedBooking() {
           <li><strong>Occasion:</strong> {booking.occasion}</li>
         </ul>
       )}
+      <Link to="/" className="btn-primary">Return to Home</Link>
     </section>
   );
 }

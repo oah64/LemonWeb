@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link, NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 function Nav() {
   return (
@@ -11,25 +11,25 @@ function Nav() {
           className="logo"
         />
       </Link>
-      <nav>
+      <nav aria-label="Main">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" end>Home</NavLink>
           </li>
           <li>
-            <HashLink to="/#about">About</HashLink>
+            <NavHashLink to="/#about">About</NavHashLink>
           </li>
           <li>
-            <Link to="/menu">Menu</Link>
+            <NavLink to="/menu">Menu</NavLink>
           </li>
           <li>
-            <Link to="/reservations">Reservations</Link>
+            <NavLink to="/reservations">Reservations</NavLink>
           </li>
           <li>
-            <Link to="/order">Order Online</Link>
+            <NavLink to="/order">Order Online</NavLink>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <NavLink to="/login">Login</NavLink>
           </li>
         </ul>
       </nav>

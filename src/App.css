@@ -35,6 +35,11 @@ body {
   font-weight: 500;
 }
 
+.App-header nav ul li a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* ── Shared button ───────────────────────────────── */
 .btn-primary {
   width: 12rem;
@@ -50,6 +55,15 @@ body {
   cursor: pointer;
   font-size: 1rem;
   box-shadow: 2px 3px 10px #333;
+  transition: transform 0.15s ease;
+}
+
+.btn-primary:not(:disabled):hover {
+  transform: scale(1.06);
+}
+
+.btn-primary:not(:disabled):active {
+  transform: scale(0.97);
 }
 
 /* ── Hero ────────────────────────────────────────── */
@@ -75,7 +89,7 @@ body {
   font-size: 3.5rem;
 }
 
-.hero-text h3 {
+.hero-subtitle {
   font-size: 2rem;
   padding: 1rem 0;
 }
@@ -369,6 +383,22 @@ footer nav ul li {
   align-self: start;
 }
 
+.booking-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #b22222;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.form-field input.invalid,
+.form-field select.invalid {
+  border-color: #b22222;
+}
+
 .booking-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -427,10 +457,26 @@ footer nav ul li {
 
 .confirmed-booking ul,
 .confirmed-booking p {
-  padding: 1rem;
+  margin: 3rem 0;
   color: #fff;
   gap: 1rem;
 }
+
+/* ── Placeholder ──────────────────────────────────── */
+
+.page-placeholder {
+  padding: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.page-placeholder p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
 /* ── Responsive ──────────────────────────────────── */
 
 /* Tablet: ≤1024px */

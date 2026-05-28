@@ -22,8 +22,8 @@ export function updateTimes(state, action) {
 function BookingPage() {
   const navigate = useNavigate();
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
-  const [bookings, setBookings] = useState(
-    () => JSON.parse(localStorage.getItem("bookings") || "[]")
+  const [bookings, setBookings] = useState(() =>
+    JSON.parse(localStorage.getItem("bookings") || "[]"),
   );
 
   const submitForm = (formData) => {
@@ -39,15 +39,19 @@ function BookingPage() {
 
   return (
     <section className="booking-page">
-      <div className="booking-hero">
+      <header className="booking-hero">
         <h1>Reserve a Table</h1>
         <p>Book your table at Little Lemon</p>
-      </div>
+      </header>
 
       <div className="booking-layout">
         <div className="booking-slots-section">
-          <h2>Today's Availability</h2>
-          <ul className="booking-slots-list" aria-live="polite" aria-label="Time slot availability">
+          <h2>Availability on the selected date</h2>
+          <ul
+            className="booking-slots-list"
+            aria-live="polite"
+            aria-label="Time slot availability"
+          >
             {allTimes.map((t) => (
               <BookingSlot
                 key={t}

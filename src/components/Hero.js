@@ -5,7 +5,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-text">
         <h1>Little Lemon</h1>
-        <h3>Chicago</h3>
+        <p className="hero-subtitle">Chicago</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

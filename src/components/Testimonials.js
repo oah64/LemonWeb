@@ -3,28 +3,28 @@ import TestimonialCard from "./TestimonialCard";
 const testimonials = [
   {
     img: "../assets/Fratze1.png",
-    alt: "name1",
+    alt: "Customer photo",
     name: "Name 1",
     rating: "★★★★★",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     img: "../assets/Fratze2.png",
-    alt: "name2",
+    alt: "Customer photo",
     name: "Name 2",
     rating: "★★★★☆",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     img: "../assets/Fratze3.png",
-    alt: "name3",
+    alt: "Customer photo",
     name: "Name 3",
     rating: "★★★★★",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     img: "../assets/Fratze4.png",
-    alt: "name4",
+    alt: "Customer photo",
     name: "Name 4",
     rating: "★★★☆☆",
     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

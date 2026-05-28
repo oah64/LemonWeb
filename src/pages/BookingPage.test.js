@@ -45,6 +45,7 @@ test("saves submitted booking to localStorage on successful submit", () => {
 
   fireEvent.change(screen.getByLabelText(/choose date/i), { target: { value: "2026-05-15" } });
   fireEvent.change(screen.getByLabelText(/choose time/i), { target: { value: "17:00" } });
+  fireEvent.change(screen.getByLabelText(/occasion/i), { target: { value: "Birthday" } });
   fireEvent.submit(screen.getByRole("form", { name: /table reservation form/i }));
 
   const saved = JSON.parse(localStorage.getItem("bookings"));
@@ -64,6 +65,7 @@ test("appends new booking to existing bookings in localStorage", () => {
 
   fireEvent.change(screen.getByLabelText(/choose date/i), { target: { value: "2026-05-15" } });
   fireEvent.change(screen.getByLabelText(/choose time/i), { target: { value: "17:00" } });
+  fireEvent.change(screen.getByLabelText(/occasion/i), { target: { value: "Anniversary" } });
   fireEvent.submit(screen.getByRole("form", { name: /table reservation form/i }));
 
   const saved = JSON.parse(localStorage.getItem("bookings"));

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SpecialCard from "./SpecialCard";
 
 const specials = [
@@ -32,7 +33,7 @@ function Specials() {
     <section className="highlights">
       <div className="highlights-header">
         <h2>This weeks Specials</h2>
-        <button className="btn-primary">Online Menu</button>
+        <Link to="/menu" className="btn-primary">Online Menu</Link>
       </div>
       <div className="highlights-cards">
         {specials.map((special) => (
